@@ -257,6 +257,10 @@ address p:hover {
     margin-right: 30px;
 }
 
+.s3 ul li img {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .s4 {
     background: #F5F4FA;    
     width: 100%;
@@ -296,6 +300,11 @@ address p:hover {
 
 .our-team li:not(:last-child) {
     margin-right: 30px;
+}
+
+.our-team li img:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 0px;
 }
 
 .name {
