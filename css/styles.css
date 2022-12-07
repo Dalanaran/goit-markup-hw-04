@@ -1,9 +1,17 @@
+:root {
+    --main-bg-color: #FFFFFF;
+    --second-bg-color: #2F303A;
+    --main-text-color: #FFFFFF;
+    --second-text-color: #212121;
+}
+
 body {
     font-family: 'Roboto', 'Raleway', sans-serif;
     font-style: normal;
     width: 100%;
     background-color: #fff;
 }
+
 
 
 
@@ -15,12 +23,23 @@ header {
     height: 80px;    
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .container {
-    display: flex;
-    flex-wrap: nowrap;    
+   /* display: flex;
+    flex-wrap: nowrap; */    
     width: 1200px;
     margin: auto;
-    padding: 24px 15px 25px;
+    padding: 0 15px;
+}
+
+.header-con {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 24px 0 24px 0;
 }
 
 .logo {   
@@ -80,13 +99,12 @@ header {
 .footer-contacts li a:hover,
 address p:focus,
 address p:hover {
-    color: #2196F3;
-    cursor: pointer;    
+    color: #2196F3;       
 } 
 
 .head-address a:focus svg,
 .head-address a:hover svg {
-    fill: #2196F3;
+   /* fill: #2196F3;*/
 }
 
 .add-container {
@@ -107,6 +125,7 @@ address p:hover {
 
 .head-address a {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     font-weight: 500;
     font-size: 14px;
@@ -118,7 +137,7 @@ address p:hover {
 
 .head-address a svg {
     margin-right: 10px;
-    fill: #757575;
+    fill: currentColor;
 }
 
 /* main */
@@ -172,15 +191,19 @@ address p:hover {
 }
 
 .s2 {    
-    padding: 94px 15px 0;
+    padding: 0 15px 0;
     display: flex;
     flex-wrap: wrap;
 }
 
 .svg-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
     background: #F5F4FA;
     border-radius: 4px;
-    padding: 25px 100px;
+   
     margin-bottom: 30px;
 }
 
@@ -223,7 +246,7 @@ address p:hover {
 
 .s3 {
     width: 1200px;
-    margin: 94px auto;
+    margin: 94px auto 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -296,6 +319,7 @@ address p:hover {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
 }
 
 .our-team li:not(:last-child) {
@@ -324,16 +348,23 @@ address p:hover {
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
-    margin: 10px 0 30px 0;
+    margin: 10px 0 16px 0;
 }
 
 .social-svg {
-    padding: 0 32px 30px 32px;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 0;
+    display: flex;   
+    justify-content: center;
 }
 
 .social-svg li {
+    width: 44px;
+    height: 44px;
+    border: 0;
+    box-shadow: none;
+}
+
+.social-svg li a {
     display: flex;
     padding: 12px;
     width: 44px;
@@ -349,8 +380,8 @@ address p:hover {
     fill: #AFB1B8;    
 }
 
-.social-svg li:focus,
-.social-svg li:hover {
+.social-svg li a:focus,
+.social-svg li a:hover {
     background-color: #2196F3;
     border: 0;
     border-radius: 50%;
@@ -391,6 +422,7 @@ address p:hover {
 
 .s5 ul li {
     width: 170px;
+    height: 92px;
     list-style: none;
 }
 
@@ -406,26 +438,16 @@ address p:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 16px 0;
+    height: 100%;
 }
 
 .clients-link:focus,
 .clients-link:hover {
     border: 1px solid #2196F3;
-    fill: #2196F3;
-    border-radius: 4px;
+    fill: #2196F3;    
 }
 
 /* Portfolio */
-.pf-container {
-    width: 1200px;
-    margin: 94px auto;
-    padding: 0 15px;
-}
-
-.pf-container ul li {
-    list-style: none;
-}
 
 .pf-nav {
     width: 576px;
@@ -433,6 +455,7 @@ address p:hover {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 /*.pf-nav .active {
@@ -444,11 +467,9 @@ address p:hover {
 }*/
 
 .pf-nav button:hover,
-.pf-nav button:focus {
-    padding: 6px 25px;
+.pf-nav button:focus {    
     background-color: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);    
     color: #fff;
 }
 
@@ -517,14 +538,24 @@ address p:hover {
     color: #757575;
 }
 
+.pf-work li:hover,
+.pf-work li:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+} 
+
 footer {
     background-color: #2F303A;
     padding: 60px 0;
 }
 
-/*.footer.container {
-    flex-direction: column;
-}*/
+.footer-container {
+    display: flex;
+    align-items: baseline;    
+}
+
+.footer-addres-box {
+    min-width: 231px;
+}
 
 .logo-white {
     color: #fff;
@@ -571,7 +602,7 @@ footer {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 12px 0 20px 0;
+    margin: 0 0 20px 0;
 }
 
 .footer-social-svg {
@@ -582,10 +613,16 @@ footer {
 }
 
 .footer-social-svg li {
+    list-style: none;
+    width: 44px;
+    height: 44px;
+}
+
+.footer-social-svg li a {
     display: flex;
     padding: 12px;
     width: 44px;
-    list-style: none;
+    
     background: rgba(255, 255, 255, 0.1);
     border: 0;
     border-radius: 50%;
