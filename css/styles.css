@@ -387,8 +387,8 @@ address p:hover {
     border-radius: 50%;
 }
 
-.social-svg li:focus svg,
-.social-svg li:hover svg {
+.social-svg a:focus svg,
+.social-svg a:hover svg {
     fill:#FFFFFF;
 }
 
@@ -494,7 +494,8 @@ address p:hover {
 .pf-work {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 .pf-work li {    
@@ -538,8 +539,8 @@ address p:hover {
     color: #757575;
 }
 
-.pf-work li:hover,
-.pf-work li:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 } 
 
@@ -636,14 +637,12 @@ footer {
     fill: #FFFFFF;
 }
 
-.footer-social-svg li:focus,
-.footer-social-svg li:hover {
-    background-color: #2196F3;
-    border: 0;
-    border-radius: 50%;
+.footer-social-svg a:focus,
+.footer-social-svg a:hover {
+    background-color: #2196F3;      
 }
 
-.footer-social-svg li:focus svg,
-.footer-social-svg li:hover svg {
+.footer-social-svg a:focus svg,
+.footer-social-svg a:hover svg {
     fill: #FFFFFF;
 }
